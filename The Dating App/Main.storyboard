@@ -16,45 +16,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create a new account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTB-ga-UIo">
-                                <rect key="frame" x="54" y="123" width="166" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EA-8c-Llz">
+                                <rect key="frame" x="20" y="154.5" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jBr-JJ-4ag"/>
+                                </constraints>
+                                <state key="normal" title="Sign in with Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-1M-sQV">
+                                <rect key="frame" x="20" y="229.5" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.1126050502" blue="0.1043890536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cxT-zZ-N85"/>
+                                </constraints>
+                                <state key="normal" title="Sign in with Google">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGy-If-ygN">
+                                <rect key="frame" x="20" y="350.5" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uk9-uc-DMO"/>
+                                </constraints>
+                                <state key="normal" title="Create a new account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7g-K1-zBN">
+                                <rect key="frame" x="0.0" y="304.5" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EA-8c-Llz">
-                                <rect key="frame" x="132" y="245" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign in with Facebook"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-1M-sQV">
-                                <rect key="frame" x="141" y="297" width="132" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign in with Google"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGy-If-ygN">
-                                <rect key="frame" x="132" y="433" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create a new account"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7g-K1-zBN">
-                                <rect key="frame" x="198" y="373" width="19" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUE-HV-qPg">
+                                <rect key="frame" x="20" y="425.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUE-HV-qPg">
-                                <rect key="frame" x="143" y="549" width="128" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a new account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTB-ga-UIo">
+                                <rect key="frame" x="20" y="94" width="166" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y9o-h5-DXB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b9P-1M-sQV" firstAttribute="leading" secondItem="y9o-h5-DXB" secondAttribute="leading" constant="20" id="5T6-fQ-73U"/>
+                            <constraint firstItem="XTB-ga-UIo" firstAttribute="top" secondItem="y9o-h5-DXB" secondAttribute="top" constant="50" id="8Dd-MR-dSB"/>
+                            <constraint firstItem="y9o-h5-DXB" firstAttribute="trailing" secondItem="u7g-K1-zBN" secondAttribute="trailing" id="AiJ-mX-wnE"/>
+                            <constraint firstItem="YGy-If-ygN" firstAttribute="top" secondItem="u7g-K1-zBN" secondAttribute="bottom" constant="25" id="FqU-hg-bBJ"/>
+                            <constraint firstItem="u7g-K1-zBN" firstAttribute="top" secondItem="b9P-1M-sQV" secondAttribute="bottom" constant="25" id="GUi-IR-sZX"/>
+                            <constraint firstItem="NUE-HV-qPg" firstAttribute="leading" secondItem="y9o-h5-DXB" secondAttribute="leading" constant="20" id="Hd4-em-juq"/>
+                            <constraint firstItem="y9o-h5-DXB" firstAttribute="trailing" secondItem="4EA-8c-Llz" secondAttribute="trailing" constant="20" id="MXT-eA-veO"/>
+                            <constraint firstItem="XTB-ga-UIo" firstAttribute="leading" secondItem="y9o-h5-DXB" secondAttribute="leading" constant="20" id="SUP-jE-xsl"/>
+                            <constraint firstItem="4EA-8c-Llz" firstAttribute="leading" secondItem="y9o-h5-DXB" secondAttribute="leading" constant="20" id="SeO-yj-lMD"/>
+                            <constraint firstItem="b9P-1M-sQV" firstAttribute="top" secondItem="4EA-8c-Llz" secondAttribute="bottom" constant="25" id="TO7-hs-kUH"/>
+                            <constraint firstItem="y9o-h5-DXB" firstAttribute="trailing" secondItem="YGy-If-ygN" secondAttribute="trailing" constant="20" id="Wnm-Q8-NnR"/>
+                            <constraint firstItem="y9o-h5-DXB" firstAttribute="trailing" secondItem="NUE-HV-qPg" secondAttribute="trailing" constant="20" id="fTQ-to-B1f"/>
+                            <constraint firstItem="4EA-8c-Llz" firstAttribute="top" secondItem="XTB-ga-UIo" secondAttribute="bottom" constant="40" id="m6T-AY-B4V"/>
+                            <constraint firstItem="NUE-HV-qPg" firstAttribute="top" secondItem="YGy-If-ygN" secondAttribute="bottom" constant="25" id="nuI-fl-m2h"/>
+                            <constraint firstItem="YGy-If-ygN" firstAttribute="leading" secondItem="y9o-h5-DXB" secondAttribute="leading" constant="20" id="uzO-OS-p1d"/>
+                            <constraint firstItem="y9o-h5-DXB" firstAttribute="trailing" secondItem="b9P-1M-sQV" secondAttribute="trailing" constant="20" id="xPU-pE-gPO"/>
+                            <constraint firstItem="u7g-K1-zBN" firstAttribute="leading" secondItem="y9o-h5-DXB" secondAttribute="leading" id="zZO-hE-7Ms"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="createAccountButton" destination="YGy-If-ygN" id="jpE-9g-DFe"/>
@@ -73,6 +103,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
