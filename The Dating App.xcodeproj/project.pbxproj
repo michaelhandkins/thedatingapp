@@ -13,6 +13,7 @@
 		C20D8395258AE12C00F8009D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20D8394258AE12C00F8009D /* Assets.xcassets */; };
 		C20D8398258AE12C00F8009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20D8396258AE12C00F8009D /* LaunchScreen.storyboard */; };
 		C278EFEC258AE394009C0A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C278EFEB258AE394009C0A1D /* Main.storyboard */; };
+		C278EFF4258C3C91009C0A1D /* MainViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C20D8397258AE12C00F8009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C20D8399258AE12C00F8009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C278EFEB258AE394009C0A1D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C20D838B258AE12A00F8009D /* AppDelegate.swift */,
 				C20D838D258AE12A00F8009D /* SceneDelegate.swift */,
 				C20D838F258AE12A00F8009D /* MainViewController.swift */,
+				C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */,
 				C278EFEB258AE394009C0A1D /* Main.storyboard */,
 				C20D8394258AE12C00F8009D /* Assets.xcassets */,
 				C20D8396258AE12C00F8009D /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				C20D8390258AE12A00F8009D /* MainViewController.swift in Sources */,
 				C20D838C258AE12A00F8009D /* AppDelegate.swift in Sources */,
 				C20D838E258AE12A00F8009D /* SceneDelegate.swift in Sources */,
+				C278EFF4258C3C91009C0A1D /* MainViewController+UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
