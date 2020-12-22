@@ -14,7 +14,8 @@
 		C20D8398258AE12C00F8009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20D8396258AE12C00F8009D /* LaunchScreen.storyboard */; };
 		C278EFEC258AE394009C0A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C278EFEB258AE394009C0A1D /* Main.storyboard */; };
 		C278EFF4258C3C91009C0A1D /* MainViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */; };
-		C278EFF8258C3E52009C0A1D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278EFF7258C3E52009C0A1D /* SignUpViewController.swift */; };
+		C28904462592A829000633CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28904452592A829000633CF /* SignUpViewController.swift */; };
+		C28904492592AAC7000633CF /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28904482592AAC7000633CF /* SignUpViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		C20D8399258AE12C00F8009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C278EFEB258AE394009C0A1D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UI.swift"; sourceTree = "<group>"; };
-		C278EFF7258C3E52009C0A1D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C28904452592A829000633CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C28904482592AAC7000633CF /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,42 @@
 		C20D838A258AE12A00F8009D /* The Dating App */ = {
 			isa = PBXGroup;
 			children = (
+				C28904432592A645000633CF /* Model */,
+				C28904422592A640000633CF /* View */,
+				C28904412592A639000633CF /* Controller */,
 				C20D838B258AE12A00F8009D /* AppDelegate.swift */,
 				C20D838D258AE12A00F8009D /* SceneDelegate.swift */,
-				C20D838F258AE12A00F8009D /* MainViewController.swift */,
-				C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */,
-				C278EFEB258AE394009C0A1D /* Main.storyboard */,
 				C20D8394258AE12C00F8009D /* Assets.xcassets */,
 				C20D8396258AE12C00F8009D /* LaunchScreen.storyboard */,
 				C20D8399258AE12C00F8009D /* Info.plist */,
-				C278EFF7258C3E52009C0A1D /* SignUpViewController.swift */,
 			);
 			path = "The Dating App";
+			sourceTree = "<group>";
+		};
+		C28904412592A639000633CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C20D838F258AE12A00F8009D /* MainViewController.swift */,
+				C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */,
+				C28904452592A829000633CF /* SignUpViewController.swift */,
+				C28904482592AAC7000633CF /* SignUpViewController+UI.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C28904422592A640000633CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C278EFEB258AE394009C0A1D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C28904432592A645000633CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,11 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C28904492592AAC7000633CF /* SignUpViewController+UI.swift in Sources */,
 				C20D8390258AE12A00F8009D /* MainViewController.swift in Sources */,
 				C20D838C258AE12A00F8009D /* AppDelegate.swift in Sources */,
 				C20D838E258AE12A00F8009D /* SceneDelegate.swift in Sources */,
 				C278EFF4258C3C91009C0A1D /* MainViewController+UI.swift in Sources */,
-				C278EFF8258C3E52009C0A1D /* SignUpViewController.swift in Sources */,
+				C28904462592A829000633CF /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
