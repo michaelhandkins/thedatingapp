@@ -16,6 +16,8 @@
 		C278EFF4258C3C91009C0A1D /* MainViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */; };
 		C28904462592A829000633CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28904452592A829000633CF /* SignUpViewController.swift */; };
 		C28904492592AAC7000633CF /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28904482592AAC7000633CF /* SignUpViewController+UI.swift */; };
+		C289044C2592B704000633CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289044B2592B704000633CF /* SignInViewController.swift */; };
+		C289044F2592B71A000633CF /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289044E2592B71A000633CF /* SignInViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UI.swift"; sourceTree = "<group>"; };
 		C28904452592A829000633CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C28904482592AAC7000633CF /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
+		C289044B2592B704000633CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C289044E2592B71A000633CF /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */,
 				C28904452592A829000633CF /* SignUpViewController.swift */,
 				C28904482592AAC7000633CF /* SignUpViewController+UI.swift */,
+				C289044B2592B704000633CF /* SignInViewController.swift */,
+				C289044E2592B71A000633CF /* SignInViewController+UI.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C289044F2592B71A000633CF /* SignInViewController+UI.swift in Sources */,
+				C289044C2592B704000633CF /* SignInViewController.swift in Sources */,
 				C28904492592AAC7000633CF /* SignUpViewController+UI.swift in Sources */,
 				C20D8390258AE12A00F8009D /* MainViewController.swift in Sources */,
 				C20D838C258AE12A00F8009D /* AppDelegate.swift in Sources */,
