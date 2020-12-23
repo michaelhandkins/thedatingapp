@@ -18,6 +18,8 @@
 		C28904492592AAC7000633CF /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28904482592AAC7000633CF /* SignUpViewController+UI.swift */; };
 		C289044C2592B704000633CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289044B2592B704000633CF /* SignInViewController.swift */; };
 		C289044F2592B71A000633CF /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289044E2592B71A000633CF /* SignInViewController+UI.swift */; };
+		C28904522592BE7E000633CF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28904512592BE7E000633CF /* ForgotPasswordViewController.swift */; };
+		C28904552592BE9D000633CF /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28904542592BE9D000633CF /* ForgotPasswordViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C28904482592AAC7000633CF /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
 		C289044B2592B704000633CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C289044E2592B71A000633CF /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		C28904512592BE7E000633CF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		C28904542592BE9D000633CF /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				C28904482592AAC7000633CF /* SignUpViewController+UI.swift */,
 				C289044B2592B704000633CF /* SignInViewController.swift */,
 				C289044E2592B71A000633CF /* SignInViewController+UI.swift */,
+				C28904512592BE7E000633CF /* ForgotPasswordViewController.swift */,
+				C28904542592BE9D000633CF /* ForgotPasswordViewController+UI.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,7 +186,9 @@
 				C289044C2592B704000633CF /* SignInViewController.swift in Sources */,
 				C28904492592AAC7000633CF /* SignUpViewController+UI.swift in Sources */,
 				C20D8390258AE12A00F8009D /* MainViewController.swift in Sources */,
+				C28904552592BE9D000633CF /* ForgotPasswordViewController+UI.swift in Sources */,
 				C20D838C258AE12A00F8009D /* AppDelegate.swift in Sources */,
+				C28904522592BE7E000633CF /* ForgotPasswordViewController.swift in Sources */,
 				C20D838E258AE12A00F8009D /* SceneDelegate.swift in Sources */,
 				C278EFF4258C3C91009C0A1D /* MainViewController+UI.swift in Sources */,
 				C28904462592A829000633CF /* SignUpViewController.swift in Sources */,

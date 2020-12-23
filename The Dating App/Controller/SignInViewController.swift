@@ -34,7 +34,6 @@ class SignInViewController: UIViewController {
         setupPasswordTextField()
         setupSignInButton()
         setupSignUpButton()
-        setupForgotPassword()
         
     }
     

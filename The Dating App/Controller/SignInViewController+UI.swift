@@ -73,10 +73,7 @@ extension SignInViewController {
         
         signUpButton.setAttributedTitle(attributedText, for: .normal)
     }
-    
-    func setupForgotPassword() {
-        
-    }
+
     
 
 }
