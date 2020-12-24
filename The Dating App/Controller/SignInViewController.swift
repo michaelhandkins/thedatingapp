@@ -37,7 +37,10 @@ class SignInViewController: UIViewController {
         
     }
     
-
+    @IBAction func signUpPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
 
 }

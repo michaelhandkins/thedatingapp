@@ -201,6 +201,9 @@
                                     <constraint firstAttribute="height" constant="50" id="OEc-W9-aiT"/>
                                 </constraints>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <segue destination="7UJ-yQ-ArL" kind="show" id="dQM-YE-eXB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56P-BG-0BY">
                                 <rect key="frame" x="20" y="64" width="75.5" height="22"/>
@@ -322,12 +325,18 @@
                                     <constraint firstAttribute="height" constant="50" id="gMU-vL-edn"/>
                                 </constraints>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="7UJ-yQ-ArL" eventType="touchUpInside" id="e26-2F-3Uf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-I2-0af">
                                 <rect key="frame" x="20" y="852" width="374" height="30"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6l-Cx-Ck0" kind="show" id="Glg-Rg-yw2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7fA-1H-OkC"/>
@@ -352,6 +361,7 @@
                             <constraint firstItem="7fA-1H-OkC" firstAttribute="trailing" secondItem="4JC-Mh-cbw" secondAttribute="trailing" constant="20" id="rgs-yD-iYT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="noP-0b-2kz"/>
                     <connections>
                         <outlet property="emailContainerView" destination="ZVL-4E-Rh8" id="6tv-al-XVP"/>
                         <outlet property="emailTextField" destination="ee2-Ow-XvF" id="qLK-VH-bbM"/>
@@ -421,6 +431,7 @@
                             <constraint firstItem="GKi-Ej-83e" firstAttribute="leading" secondItem="LsX-fr-RZC" secondAttribute="leading" constant="20" id="pd1-zd-Xjc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6xd-2O-Jmm"/>
                     <connections>
                         <outlet property="emailContainerView" destination="GKi-Ej-83e" id="ZaY-7m-Aks"/>
                         <outlet property="emailTextField" destination="O6j-PD-lzy" id="c2X-nC-8xJ"/>
