@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var titleTextLabel: UILabel!
@@ -44,7 +47,29 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
-        
+        Auth.auth().createUser(withEmail: "test2@gmail.com", password: "123456") { (authDataResult, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+            if let authData = authDataResult {
+                print(authData.user.email)
+                let dict : Dictionary<String, Any> = [
+                    "uid" : authData.user.uid,
+                    "email" : authData.user.email,
+                    "profileImageUrl" : "",
+                    "status" : "Welcome to The Dating App"
+                ]
+                
+                Database.database().reference().child("users").child(authData.user.uid).updateChildValues(dict) { (error, ref) in
+                    if error == nil {
+                        print("Done")
+                    }
+                }
+            }
+            
+            
+        }
         
         
     }
