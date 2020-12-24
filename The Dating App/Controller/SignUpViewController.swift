@@ -38,5 +38,10 @@ class SignUpViewController: UIViewController {
         setupSignInButton()
         
     }
+    
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 
 }
