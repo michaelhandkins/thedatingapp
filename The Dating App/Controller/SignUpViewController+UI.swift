@@ -22,6 +22,15 @@ extension SignUpViewController {
     func setupAvatar() {
         avatar.layer.cornerRadius = 40
         avatar.clipsToBounds = true
+        avatar.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentPicker))
+        avatar.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func presentPicker() {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        self.present(picker, animated: true, completion: nil)
     }
     
     func setupFullnameTextField() {
