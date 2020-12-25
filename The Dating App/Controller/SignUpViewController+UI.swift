@@ -30,6 +30,8 @@ extension SignUpViewController {
     @objc func presentPicker() {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
+        picker.delegate = self
         self.present(picker, animated: true, completion: nil)
     }
     
@@ -98,4 +100,22 @@ extension SignUpViewController {
         signInButton.setAttributedTitle(attributedText, for: .normal)
     }
 
+}
+
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            avatar.image = imageSelected
+        }
+        
+        if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            avatar.image = imageOriginal
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
 }
