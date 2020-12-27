@@ -14,5 +14,6 @@ target 'The Dating App' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'ProgressHUD'
 
 end

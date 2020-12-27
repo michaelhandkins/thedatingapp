@@ -9,7 +9,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
-
+import ProgressHUD
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var titleTextLabel: UILabel!
@@ -51,17 +51,17 @@ class SignUpViewController: UIViewController {
     
     func validateFields() {
         guard let username = self.fullnameTextField.text, !username.isEmpty else {
-            print("Please enter a username")
+            ProgressHUD.showError("Please enter a username")
             return
         }
         
         guard let email = self.emailTextField.text, !email.isEmpty else {
-            print("Please enter an email address")
+            ProgressHUD.showError("Please enter an email address")
             return
         }
         
         guard let password = self.passwordTextField.text, !password.isEmpty else {
-            print("Please enter a password")
+            ProgressHUD.showError("Please enter a password")
             return
         }
     }
@@ -73,7 +73,7 @@ class SignUpViewController: UIViewController {
         self.validateFields()
         
         guard let imageSelected = self.image else  {
-            print("Avatar is nil")
+            ProgressHUD.showError("Please choose your profile picture")
             return
         }
         
