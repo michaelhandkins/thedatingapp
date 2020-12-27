@@ -81,9 +81,9 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        Auth.auth().createUser(withEmail: "test5@gmail.com", password: "123456") { (authDataResult, error) in
+        Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (authDataResult, error) in
             if error != nil {
-                print(error!.localizedDescription)
+                ProgressHUD.showError(error!.localizedDescription)
             }
             
             if let authData = authDataResult {
@@ -91,6 +91,7 @@ class SignUpViewController: UIViewController {
                 var dict : Dictionary<String, Any> = [
                     "uid" : authData.user.uid,
                     "email" : authData.user.email,
+                    "username" : self.fullnameTextField.text!,
                     "profileImageUrl" : "",
                     "status" : "Welcome to The Dating App"
                 ]
