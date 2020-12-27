@@ -99,6 +99,10 @@ extension SignUpViewController {
         
         signInButton.setAttributedTitle(attributedText, for: .normal)
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 }
 

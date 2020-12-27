@@ -49,7 +49,29 @@ class SignUpViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    func validateFields() {
+        guard let username = self.fullnameTextField.text, !username.isEmpty else {
+            print("Please enter a username")
+            return
+        }
+        
+        guard let email = self.emailTextField.text, !email.isEmpty else {
+            print("Please enter an email address")
+            return
+        }
+        
+        guard let password = self.passwordTextField.text, !password.isEmpty else {
+            print("Please enter a password")
+            return
+        }
+    }
+    
     @IBAction func signUpButtonPressed(_ sender: Any) {
+        
+        self.view.endEditing(true)
+        
+        self.validateFields()
+        
         guard let imageSelected = self.image else  {
             print("Avatar is nil")
             return
