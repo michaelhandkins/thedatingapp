@@ -24,6 +24,8 @@
 		C289045825942BE1000633CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C289045725942BE1000633CF /* GoogleService-Info.plist */; };
 		C2AD3DB225992D4A003BA528 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AD3DB125992D4A003BA528 /* API.swift */; };
 		C2AD3DB525992D9A003BA528 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AD3DB425992D9A003BA528 /* UserAPI.swift */; };
+		C2AD3DB9259A9940003BA528 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AD3DB8259A9940003BA528 /* StorageService.swift */; };
+		C2AD3DBC259A9E6B003BA528 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AD3DBB259A9E6B003BA528 /* Ref.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		C289045725942BE1000633CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2AD3DB125992D4A003BA528 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C2AD3DB425992D9A003BA528 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		C2AD3DB8259A9940003BA528 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		C2AD3DBB259A9E6B003BA528 /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
 		F3893985603FB8E2AC8B9D50 /* Pods-The Dating App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Dating App.debug.xcconfig"; path = "Target Support Files/Pods-The Dating App/Pods-The Dating App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,9 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				C20D838F258AE12A00F8009D /* MainViewController.swift */,
+				C2AD3DBB259A9E6B003BA528 /* Ref.swift */,
 				C278EFF3258C3C91009C0A1D /* MainViewController+UI.swift */,
 				C28904452592A829000633CF /* SignUpViewController.swift */,
 				C28904482592AAC7000633CF /* SignUpViewController+UI.swift */,
+				C2AD3DB8259A9940003BA528 /* StorageService.swift */,
 				C289044B2592B704000633CF /* SignInViewController.swift */,
 				C289044E2592B71A000633CF /* SignInViewController+UI.swift */,
 				C28904512592BE7E000633CF /* ForgotPasswordViewController.swift */,
@@ -261,12 +267,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2AD3DB225992D4A003BA528 /* API.swift in Sources */,
+				C2AD3DBC259A9E6B003BA528 /* Ref.swift in Sources */,
 				C289044F2592B71A000633CF /* SignInViewController+UI.swift in Sources */,
 				C289044C2592B704000633CF /* SignInViewController.swift in Sources */,
 				C28904492592AAC7000633CF /* SignUpViewController+UI.swift in Sources */,
 				C20D8390258AE12A00F8009D /* MainViewController.swift in Sources */,
 				C28904552592BE9D000633CF /* ForgotPasswordViewController+UI.swift in Sources */,
 				C20D838C258AE12A00F8009D /* AppDelegate.swift in Sources */,
+				C2AD3DB9259A9940003BA528 /* StorageService.swift in Sources */,
 				C28904522592BE7E000633CF /* ForgotPasswordViewController.swift in Sources */,
 				C2AD3DB525992D9A003BA528 /* UserAPI.swift in Sources */,
 				C20D838E258AE12A00F8009D /* SceneDelegate.swift in Sources */,

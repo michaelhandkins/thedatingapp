@@ -54,7 +54,12 @@ class SignUpViewController: UIViewController {
         
         self.view.endEditing(true)
         self.validateFields()
-        self.signUp()
+        self.signUp {
+            // switch view
+        } onError: { (error) in
+            ProgressHUD.showError(error)
+        }
+
         
     }
     

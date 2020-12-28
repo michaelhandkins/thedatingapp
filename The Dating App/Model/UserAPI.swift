@@ -24,15 +24,15 @@ class UserAPI {
             if let authData = authDataResult {
                 print(authData.user.email)
                 var dict : Dictionary<String, Any> = [
-                    "uid" : authData.user.uid,
-                    "email" : authData.user.email,
-                    "username" : username,
-                    "profileImageUrl" : "",
-                    "status" : "Welcome to The Dating App"
+                    UID : authData.user.uid,
+                    EMAIL : authData.user.email,
+                    USERNAME : username,
+                    PROFILE_IMAGE_URL : "",
+                    STATUS : "Welcome to The Dating App"
                 ]
                 
                 guard let imageSelected = image else  {
-                    ProgressHUD.showError("Please choose your profile picture")
+                    ProgressHUD.showError(ERROR_EMPTY_PHOTO)
                     return
                 }
                 
@@ -40,31 +40,18 @@ class UserAPI {
                     return
                 }
                 
-                let storageRef = Storage.storage().reference(forURL: "gs://thedatingapp-f3ed6.appspot.com")
-                let storageProfileRef = storageRef.child("profile").child(authData.user.uid)
+                let storageProfile = Ref().storageSpecificProfile(uid: authData.user.uid)
                 
                 let metadata = StorageMetadata()
                 metadata.contentType = "image/jpg"
-                storageProfileRef.putData(imageData, metadata: metadata) { (storageMetaData, error) in
-                    if error != nil {
-                        print(error?.localizedDescription)
-                        return
-                    }
-                    
-                    storageProfileRef.downloadURL { (url, error) in
-                        if let metaImageUrl = url?.absoluteString {
-                            dict["profileImageUrl"] = metaImageUrl
-                            
-                            Database.database().reference().child("users").child(authData.user.uid).updateChildValues(dict) { (error, ref) in
-                                if error == nil {
-                                    onSuccess()
-                                } else {
-                                    onError(error!.localizedDescription)
-                                }
-                            }
-                        }
-                    }
+                
+                StorageService.savePhoto(username: username, uid: authData.user.uid, imageData: imageData, metadata: metadata, storageProfileRef: storageProfile, dict: dict) {
+                    onSuccess()
+                } onError: { (errorMessage) in
+                    onError(errorMessage)
                 }
+
+                
             }
         }
     }

@@ -107,27 +107,28 @@ extension SignUpViewController {
     
     func validateFields() {
         guard let username = self.fullnameTextField.text, !username.isEmpty else {
-            ProgressHUD.showError("Please enter a username")
+            ProgressHUD.showError(ERROR_EMPTY_USERNAME)
             return
         }
         
         guard let email = self.emailTextField.text, !email.isEmpty else {
-            ProgressHUD.showError("Please enter an email address")
+            ProgressHUD.showError(ERROR_EMPTY_EMAIL)
             return
         }
         
         guard let password = self.passwordTextField.text, !password.isEmpty else {
-            ProgressHUD.showError("Please enter a password")
+            ProgressHUD.showError(ERROR_EMPTY_PASSWORD)
             return
         }
     }
     
-    func signUp() {
-        
+    func signUp(onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void) {
+        ProgressHUD.show()
         API.User.signUp(withUsername: self.fullnameTextField.text!, email: self.emailTextField.text!, password: self.passwordTextField.text!, image: self.image) {
-            print("Done")
+            ProgressHUD.dismiss()
+            onSuccess()
         } onError: { (error) in
-            print(error)
+            onError(error)
         }
 
     }
