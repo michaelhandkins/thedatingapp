@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class SignInViewController: UIViewController {
     @IBOutlet weak var titleTextLabel: UILabel!
@@ -15,9 +16,6 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
-    
-    
-    
     
     
     override func viewDidLoad() {
@@ -39,6 +37,19 @@ class SignInViewController: UIViewController {
     
     @IBAction func signUpPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func signInPressed(_ sender: Any) {
+        
+        self.view.endEditing(true)
+        self.validateFields()
+        self.signIn {
+            // switch view
+        } onError: { (error) in
+            ProgressHUD.showError(error)
+        }
+
+        
     }
     
     
